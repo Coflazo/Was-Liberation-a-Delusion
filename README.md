@@ -67,7 +67,7 @@ When the realized tariff burden is used in a PPML gravity model, the main estima
 
 The repository is intentionally narrower than the private working folder. It publishes the thesis, the code, the figures, the public processed panels, one small public WEO cache needed for Appendix Figure B, and the output tables needed to inspect the results, while larger raw archives, private drafts, access keys, literature PDFs, and restricted-data products are left out.
 
-## Reproducing The Public Pipeline
+## Reproduce My Work
 
 The pipeline is written for Python 3.12, with dependencies pinned in `requirements.lock`. A first full run can take a while because the script downloads public data, waits between rate-limited requests, builds the panels, runs the regressions, and exports the figures. Later runs are faster because raw downloads are cached locally.
 
