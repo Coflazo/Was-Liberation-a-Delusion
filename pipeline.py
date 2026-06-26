@@ -16,10 +16,9 @@ Commands
 --------
     python pipeline.py run             # full pipeline
     python pipeline.py download        # raw data only
-    python pipeline.py plot            # figures from cached data
-    python pipeline.py dashboard       # optional terminal UI
-    python pipeline.py report          # summary report
     python pipeline.py regress         # PPML timing regression
+    python pipeline.py figures         # figures from cached data
+    python pipeline.py plot            # alias for figures
 """
 
 # ------------------------------------------------------------
@@ -2758,6 +2757,42 @@ def run(
     console.print(f"\n[bold green]{_icon('ok')}Pipeline complete![/bold green]")
     console.print("[dim]All figures in figures/, processed data in data/processed/[/dim]")
     console.print("[dim]Use 'python pipeline.py regress' to rerun the main PPML model.[/dim]")
+
+
+def _run_figure_generation(only: str = "") -> None:
+    stems = [s.strip() for s in only.split(",") if s.strip()]
+    import figures_v2
+    figures_v2.main(only=stems or None)
+
+
+@app.command(name="figures")
+def figures(
+    only: str = typer.Option(
+        "",
+        "--only",
+        "-o",
+        help="Comma-separated figure stems to regenerate. Empty means all figures.",
+    ),
+) -> None:
+    """
+    Regenerate thesis figures from cached public panels and outputs.
+    """
+    _run_figure_generation(only)
+
+
+@app.command(name="plot")
+def plot(
+    only: str = typer.Option(
+        "",
+        "--only",
+        "-o",
+        help="Comma-separated figure stems to regenerate. Empty means all figures.",
+    ),
+) -> None:
+    """
+    Alias for 'figures'.
+    """
+    _run_figure_generation(only)
 
 
 @app.command()

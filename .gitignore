@@ -20,8 +20,10 @@ census_data_api.txt
 *.env
 .env
 
-# Raw data are rebuilt locally by the pipeline and are not redistributed here
-data/raw/
+# Raw data are rebuilt locally by the pipeline and are not redistributed here,
+# except for the small public WEO cache needed to regenerate Appendix Figure B.
+data/raw/*
+!data/raw/imf_weo_apr2025.csv
 
 # Processed backups and private intermediate files
 data/processed/*.bak
