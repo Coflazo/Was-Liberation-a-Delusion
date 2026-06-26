@@ -1,0 +1,20 @@
+hs2_chapter,description,tariffed,exemption_reason,approx_rate_pct,usmca_caveat
+1,Live animals,True,N/A,10,USMCA-compliant CA/MX goods may be exempt
+2,Meat,True,N/A,10,USMCA-compliant CA/MX goods may be exempt
+10,Cereals,True,N/A,10,USMCA-compliant CA/MX goods may be exempt
+12,Oil seeds,True,N/A,10,USMCA-compliant CA/MX goods may be exempt
+27,Mineral fuels,False,energy_exemption,0,USMCA-compliant CA/MX goods may be exempt
+30,Pharmaceuticals,False,pharma_exemption,0,USMCA-compliant CA/MX goods may be exempt
+44,Wood,True,N/A,10,USMCA-compliant CA/MX goods may be exempt
+61,Apparel (knit),True,N/A,10,USMCA-compliant CA/MX goods may be exempt
+62,Apparel (woven),True,N/A,10,USMCA-compliant CA/MX goods may be exempt
+72,Iron and steel,True,section_232,25,USMCA-compliant CA/MX goods may be exempt
+73,Steel articles,True,section_232,25,USMCA-compliant CA/MX goods may be exempt
+76,Aluminium,True,section_232,10,USMCA-compliant CA/MX goods may be exempt
+84,Machinery/computers,False,tech_exemption_apr22,0,USMCA-compliant CA/MX goods may be exempt
+85,Electronics/semiconductors,False,tech_exemption_apr22,0,USMCA-compliant CA/MX goods may be exempt
+87,Vehicles,True,section_232_auto,25,USMCA-compliant CA/MX goods may be exempt
+88,Aircraft,False,strategic_exemption,0,USMCA-compliant CA/MX goods may be exempt
+90,Optical/medical instruments,False,tech_exemption_apr22,0,USMCA-compliant CA/MX goods may be exempt
+94,Furniture,True,N/A,10,USMCA-compliant CA/MX goods may be exempt
+95,Toys,True,N/A,10,USMCA-compliant CA/MX goods may be exempt

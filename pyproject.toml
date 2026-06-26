@@ -1,0 +1,41 @@
+[project]
+name = "liberation-day-pipeline"
+version = "1.0.0"
+description = "Data pipeline for the BSc thesis 'Was Liberation a Delusion?' on the 2025 US Liberation Day tariffs."
+authors = [{ name = "Cagan Oflazoglu" }]
+requires-python = ">=3.12"
+
+# Core dependencies needed to download data, build panels, run the regression,
+# and generate the thesis figures. Exact versions are pinned in requirements.lock.
+dependencies = [
+    "sdmx1",
+    "pandas",
+    "numpy",
+    "requests",
+    "certifi",
+    "scipy",
+    "comtradeapicall",
+    "openpyxl",
+    "xlrd",
+    "py7zr",
+    "tqdm",
+    "matplotlib",
+    "seaborn",
+    "Pillow",
+    "scienceplots",
+    "plotnine",
+    "statsmodels",
+    "linearmodels",
+    "pingouin",
+    "great_tables",
+    "typer",
+    "rich",
+]
+
+[project.optional-dependencies]
+# The interactive terminal dashboard is not needed to reproduce the thesis.
+dashboard = ["textual", "plotext", "asciichartpy", "uniplot"]
+dev = ["pytest", "ruff"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,72 @@
+# Public release scope
+
+# Local notes, drafts, and private working material
+archive/
+literature/
+study/
+scripts/
+tests/
+CLAUDE.md
+CLAUDE_MEMORY.md
+count_data_rows.py
+gravity_data_pipeline.py
+pipeline.pre_*.py
+graphify-out/
+data_download_temporary/
+
+# Secrets and local credentials
+data/census_data_api.txt
+census_data_api.txt
+*.env
+.env
+
+# Raw data are rebuilt locally by the pipeline and are not redistributed here
+data/raw/
+
+# Processed backups and private intermediate files
+data/processed/*.bak
+data/processed/*.preedit_backup
+data/processed/internal_trade_benchmark.csv
+
+# Restricted or private output products
+outputs/*teti*
+outputs/country_tariff_month_panel.csv
+outputs/internal_trade_extension_2023.csv
+outputs/main_spec_country_month_etr.csv
+outputs/regression_results_v2.json
+outputs/regression_results_v2.json.preedit_backup
+outputs/*preedit_backup
+outputs/data_summary_report.txt
+
+# Figure sidecars and local design assets
+figures/*.txt
+figures/*.jpg
+figures/_uva_logo.jpg
+figures/uva_logo.png
+figures/uva_long_logo.png
+figures/pipeline_overview.png
+
+# Python and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# Environments, editors, and OS files
+venv/
+.venv/
+env/
+.idea/
+.vscode/
+*.swp
+.DS_Store
+._*
+.Spotlight-V100
+*.tmp
+.ipynb_checkpoints/
+
+# Keep only the final public PDF from the thesis directory
+thesis/*
+!thesis/finalized_main.pdf

@@ -1,0 +1,16 @@
+GRAVITY REGRESSION RESULTS
+============================================================
+Estimator:   PPML (statsmodels GLM/OLS)
+Specification: trade ~ log_etr1 + C(country) + C(time)
+ETR source: country-month realized ETR (etr_cm)
+Fixed effects: partner + month
+Standard errors: Clustered by partner
+Partners:    40 countries
+N obs:       2,920
+Pseudo R^2:  0.9943
+
+Coefficient          Estimate    Std.Err        z/t      P>|z|
+------------------------------------------------------------
+log_etr1              -1.6750     0.7867      -2.13     0.0332
+Intercept             21.2100     0.0156    1355.71     0.0000
+============================================================
