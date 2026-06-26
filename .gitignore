@@ -67,6 +67,6 @@ env/
 *.tmp
 .ipynb_checkpoints/
 
-# Keep only the final public PDF from the thesis directory
+# Keep only the thesis PDF from the thesis directory
 thesis/*
 !thesis/finalized_main.pdf

@@ -3,17 +3,17 @@
 BSc Economics thesis, University of Amsterdam  
 Çağan Oflazoğlu
 
-This repository contains the final thesis PDF, the replication pipeline, the processed public panels, the regression outputs, and the figures behind one question: when the United States called April 2, 2025 a day of economic liberation, did the customs record show that American buyers were actually made better off, or did it show that the country mostly paid higher tariffs while changing which foreign suppliers it used?
+This repository contains the thesis PDF, the replication pipeline, the processed public panels, the regression outputs, and the figures behind one question: when the United States called April 2, 2025 a day of economic liberation, did the customs record show that American buyers were actually made better off, or did it show that the country mostly paid higher tariffs while changing which foreign suppliers it used?
 
 The reason the project is built around realized effective tariff rates is that the policy cannot be read only from the legal rate that was announced. A tariff written into a statement is not automatically the tariff collected at the border, because exemptions, carve-outs, grace periods, product composition, and shipment timing all stand between the announcement and the customs counter. So the repository separates the headline tariff from the tariff burden that was actually collected, and only after that asks whether trade fell, whether the fall was large, and whether the missing imports from China were replaced by production in the United States or by imports from other foreign suppliers.
 
-[Read the final thesis](thesis/finalized_main.pdf)
+[Read the thesis](thesis/finalized_main.pdf)
 
 ## What To Open First
 
 | If you want to see | Open |
 |---|---|
-| Final thesis | [`thesis/finalized_main.pdf`](thesis/finalized_main.pdf) |
+| Thesis | [`thesis/finalized_main.pdf`](thesis/finalized_main.pdf) |
 | Data construction and regressions | [`pipeline.py`](pipeline.py) |
 | Figure generation | [`figures_v2.py`](figures_v2.py) |
 | Processed panels used by the paper | [`data/processed/`](data/processed/) |
@@ -63,7 +63,7 @@ When the realized tariff burden is used in a PPML gravity model, the main estima
 `-- figures/
 ```
 
-The repository is intentionally narrower than the private working folder. It publishes the final thesis, the code, the figures, the public processed panels, and the output tables needed to inspect the results, while raw archives, private drafts, access keys, literature PDFs, and restricted-data products are left out.
+The repository is intentionally narrower than the private working folder. It publishes the thesis, the code, the figures, the public processed panels, and the output tables needed to inspect the results, while raw archives, private drafts, access keys, literature PDFs, and restricted-data products are left out.
 
 ## Reproducing The Public Pipeline
 
